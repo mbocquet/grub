@@ -1,0 +1,27 @@
+---
+galaxy_info:
+  author: Mathias BOCQUET
+  description: Ansible grub role
+  company: Sekoya.org
+
+  issue_tracker_url: https://git.sekoya.org/mb/grub/issues
+
+  license: GPLv3
+
+  min_ansible_version: 2.4
+
+  platforms:
+    - name: Debian
+      versions:
+        - jessie
+        - stretch
+        - buster
+        - bullseye
+        - sid
+
+  galaxy_tags:
+    - admin
+    - bootloader
+    - grub
+
+dependencies: []
