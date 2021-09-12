@@ -1,12 +1,10 @@
 ---
 # defaults file for grub
 
-# for now this role handles these GRUB parameters : The
-# UPERCASE values are written in
-# /etc/default/grub.d/local.cfg, according to the
-# lowercase variables here. Examples below are default
-# values and should be placed in Ansible's group or
-# host vars for modifications.
+# for now this role handles these GRUB parameters : The UPERCASE values are
+# written in /etc/default/grub.d/local.cfg, according to the lowercase
+# variables here. Examples below are default values and should be placed in
+# Ansible's group or host vars for modifications.
 
 # grub_default: 0
 # grub_disable_os_prober: false
@@ -16,7 +14,9 @@
 # grub_timeout: 5
 # grub_timeout_style: hidden
 
-# The following dicts will be expanded space separated in grub configuration using the template module
+# The following dicts will be expanded space separated in grub configuration
+# using the template module
+#
 # grub_cmdline_linux_default:
 #   - quiet
 #   - splash
