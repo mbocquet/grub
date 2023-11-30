@@ -1,6 +1,6 @@
 'grub'. Ansible role to configure grub.
 
-Copyright © 2021 Mathias Bocquet (mbocquet@sekoya.org)
+Copyright © 2021-2023 Mathias Bocquet (mbocquet@sekoya.org)
 
 This file is part of 'grub' Ansible role.
 
