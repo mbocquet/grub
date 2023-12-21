@@ -20,6 +20,5 @@
 # grub_cmdline_linux_default:
 #   - quiet
 #   - splash
-#   - ...
 
 # grub_cmdline_linux: []
