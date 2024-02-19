@@ -17,3 +17,7 @@
 {% endif %}
 {% if grub_cmdline_linux is defined %}GRUB_CMDLINE_LINUX="{{ grub_cmdline_linux | join(' ') }}"
 {% endif %}
+{% if grub_serial_command is defined %}GRUB_SERIAL_COMMAND="{{ grub_serial_command | join(' ') }}"
+{% endif %}
+{% if grub_terminal is defined %}GRUB_TERMINAL="{{ grub_terminal | join(' ') }}"
+{% endif %}

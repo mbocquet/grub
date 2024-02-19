@@ -20,5 +20,6 @@
 # grub_cmdline_linux_default:
 #   - quiet
 #   - splash
-
 # grub_cmdline_linux: []
+# grub_serial_command: []
+# grub_terminal: []
