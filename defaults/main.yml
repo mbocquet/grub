@@ -1,25 +1,19 @@
 ---
 # defaults file for grub
 
-# for now this role handles these GRUB parameters : The UPERCASE values are
-# written in /etc/default/grub.d/local.cfg, according to the lowercase
+# Values are written in /etc/default/grub.d/local.cfg, according to the
 # variables here. Examples below are default values and should be placed in
-# Ansible's group or host vars for modifications.
+# Ansible's group or host vars for modifications. Special values like true or
+# false should be properly quoted.
 
-# grub_default: 0
-# grub_disable_os_prober: false
-# grub_disable_submenu: n
-# grub_gfxmode: 640x480
-# grub_gfxpayload_linux: keep
-# grub_timeout: 5
-# grub_timeout_style: hidden
-
-# The following dicts will be expanded space separated in grub configuration
-# using the template module
-#
-# grub_cmdline_linux_default:
-#   - quiet
-#   - splash
-# grub_cmdline_linux: []
-# grub_serial_command: []
-# grub_terminal: []
+# grub_config:
+#   GRUB_DEFAULT: 0
+#   GRUB_DISABLE_OS_PROBER: "false"
+#   GRUB_DISABLE_SUBMENU: n
+#   GRUB_GFXMODE: 640x480
+#   GRUB_GFXPAYLOAD_LINUX: keep
+#   GRUB_TIMEOUT: 5
+#   GRUB_TIMEOUT_STYLE: hidden
+#   GRUB_CMDLINE_LINUX_DEFAULT:
+#     quiet
+#     splash
