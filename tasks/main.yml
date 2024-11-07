@@ -8,15 +8,7 @@
     group: root
     mode: 0644
   when:
-    grub_default is defined or
-    grub_disable_os_prober is defined or
-    grub_disable_submenu is defined or
-    grub_gfxmode is defined or
-    grub_gfxpayload_linux is defined or
-    grub_timeout is defined or
-    grub_timeout_style is defined or
-    grub_cmdline_linux_default is defined or
-    grub_cmdline_linux is defined
+    grub_config is defined
   notify: update-grub
   tags:
     - grub
