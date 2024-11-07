@@ -8,7 +8,7 @@ galaxy_info:
 
   license: GPLv3
 
-  min_ansible_version: 2.4
+  min_ansible_version: "2.4"
 
   platforms:
     - name: Debian
@@ -17,6 +17,8 @@ galaxy_info:
         - stretch
         - buster
         - bullseye
+        - bookworm
+        - trixie
         - sid
 
   galaxy_tags:
