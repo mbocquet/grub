@@ -1,23 +1,4 @@
 # {{ ansible_managed }}. role: {{ role_name }}, template: local.cfg.j2
-{% if grub_default is defined %}GRUB_DEFAULT={{ grub_default }}
-{% endif %}
-{% if grub_disable_os_prober is defined %}GRUB_DISABLE_OS_PROBER={{ grub_disable_os_prober | lower() }}
-{% endif %}
-{% if grub_disable_submenu is defined %}GRUB_DISABLE_SUBMENU={{ grub_disable_submenu }}
-{% endif %}
-{% if grub_gfxmode is defined %}GRUB_GFXMODE={{ grub_gfxmode }}
-{% endif %}
-{% if grub_gfxpayload_linux is defined %}GRUB_GFXPAYLOAD_LINUX={{ grub_gfxpayload_linux }}
-{% endif %}
-{% if grub_timeout is defined %}GRUB_TIMEOUT={{ grub_timeout }}
-{% endif %}
-{% if grub_timeout_style is defined %}GRUB_TIMEOUT_STYLE={{ grub_timeout_style }}
-{% endif %}
-{% if grub_cmdline_linux_default is defined %}GRUB_CMDLINE_LINUX_DEFAULT="{{ grub_cmdline_linux_default | join(' ') }}"
-{% endif %}
-{% if grub_cmdline_linux is defined %}GRUB_CMDLINE_LINUX="{{ grub_cmdline_linux | join(' ') }}"
-{% endif %}
-{% if grub_serial_command is defined %}GRUB_SERIAL_COMMAND="{{ grub_serial_command | join(' ') }}"
-{% endif %}
-{% if grub_terminal is defined %}GRUB_TERMINAL="{{ grub_terminal | join(' ') }}"
-{% endif %}
+{% for item in grub_config | dictsort %}
+{{ item.0 }}="{{ item.1 }}"
+{% endfor %}
