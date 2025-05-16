@@ -1,4 +1,4 @@
-# {{ ansible_managed }}. role: {{ role_name }}, template: local.cfg.j2
+# Ansible managed. role: {{ role_name }}, template: local.cfg.j2
 {% for item in grub_config | dictsort %}
 {{ item.0 }}="{{ item.1 }}"
 {% endfor %}
