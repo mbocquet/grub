@@ -1,6 +1,6 @@
 ---
 # tasks file for grub
-- name: local config
+- name: Local config
   ansible.builtin.template:
     src: local.cfg.j2
     dest: /etc/default/grub.d/local.cfg
