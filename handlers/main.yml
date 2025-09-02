@@ -1,6 +1,6 @@
 ---
 # handlers file for grub
-- name: update-grub
+- name: Update grub
   ansible.builtin.command: update-grub
   changed_when: true
   tags:

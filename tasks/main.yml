@@ -9,7 +9,7 @@
     mode: 0644
   when:
     grub_config is defined
-  notify: update-grub
+  notify: Update grub
   tags:
     - grub
     - default
